@@ -7,7 +7,7 @@ import os
 
 # install dependencies
 python = "python3"
-pip = python + " -m pip3.11 "
+pip = python + " -m pip "
 
 os.system(pip + "install jinja2")
 os.system(pip + "install langid==1.1.6")
