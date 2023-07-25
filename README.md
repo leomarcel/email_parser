@@ -6,3 +6,16 @@
 #### WEB Interface : http://127.0.0.1:4500
 
 #### Original repos : https://huggingface.co/spaces/Jean-Baptiste/email_parser (thank ♥︎)
+
+
+## Config
+
+#### Install requirements + exec app
+```bash
+python3 install.py
+```
+
+#### Exec app
+```bash
+python3 app.py
+```
