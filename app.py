@@ -1,12 +1,14 @@
+import os
+os.system("pip uninstall -y gradio")
+os.system("pip install gradio==2.7.5.2")
+os.system("pip install typing-extensions --upgrade")
+
 import logging, regex
 import gradio
 from email_parser import utils, nlp
 from email_parser.doc_email import Email
 import os
 
-os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
-os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
-os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
  
 def print_highlighted_text(text, df_result, offset=0):
     return text.replace("\n", " ")
