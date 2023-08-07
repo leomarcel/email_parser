@@ -1,3 +1,8 @@
+import os
+os.system("python3 -m pip uninstall -y gradio")
+os.system("python3 -m pip install gradio==2.7.5.2")
+os.system("python3 -m pip install typing-extensions --upgrade")
+
 import logging, regex
 import gradio
 from email_parser import utils, nlp
