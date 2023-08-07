@@ -13,7 +13,7 @@ os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 python = "python"
 pip = "pip "
 
-os.system(pip + "install typing-extension==4.6.1")
+os.system(pip + "install typing-extensions==4.6.1")
 os.system(pip + "install jinja2")
 os.system(pip + "install langid==1.1.6")
 os.system(pip + "install numpy")
