@@ -13,6 +13,11 @@ from sklearn.preprocessing import MinMaxScaler
 from tensorflow import keras
 import pickle
 
+import tensorflow as tf
+
+# Hide GPU from visible devices
+tf.config.set_visible_devices([], 'GPU')
+
 from . import nlp, utils
 
 config = configparser.ConfigParser()

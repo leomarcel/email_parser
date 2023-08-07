@@ -28,6 +28,9 @@ os.system(pip + "install gradio>=2.7")
 os.system(pip + "uninstall -y gradio")
 os.system(pip + "install gradio==2.7.5.2")
 os.system(pip + "install typing-extensions --upgrade")
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
+os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 
 # exec app
 os.system(python + " app.py")
