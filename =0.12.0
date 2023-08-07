@@ -1,0 +1,3 @@
+Requirement already satisfied: tensorflow-hub in /opt/homebrew/lib/python3.11/site-packages (0.14.0)
+Requirement already satisfied: numpy>=1.12.0 in /opt/homebrew/lib/python3.11/site-packages (from tensorflow-hub) (1.24.3)
+Requirement already satisfied: protobuf>=3.19.6 in /opt/homebrew/lib/python3.11/site-packages (from tensorflow-hub) (4.23.4)

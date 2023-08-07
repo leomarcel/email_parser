@@ -34,5 +34,5 @@ os.system(pip + "uninstall -y gradio")
 os.system(pip + "install gradio==2.7.5.2")
 
 
-# exec app
-os.system(python + " app.py")
+# # exec app
+# os.system(python + " app.py")
