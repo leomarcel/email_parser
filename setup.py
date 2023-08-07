@@ -2,6 +2,9 @@ from setuptools import find_packages, setup
 from glob import glob
 import os
 
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
+os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 
 setup(name='email_parser',
       packages=find_packages(include=['email_parser']),

@@ -10,6 +10,10 @@ from keras.preprocessing.sequence import pad_sequences
 from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import MinMaxScaler
 
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
+os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
+
 from tensorflow import keras
 import pickle
 
