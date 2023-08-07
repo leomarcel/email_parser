@@ -10,8 +10,8 @@ os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 # os.system("python3 get-pip.py")
 
 # install dependencies
-python = "python"
-pip = "pip "
+python = "python3"
+pip = "python3 -m pip "
 
 os.system(pip + "install typing-extensions==4.6.1")
 os.system(pip + "install jinja2")
