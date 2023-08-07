@@ -13,6 +13,7 @@ os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 python = "python3"
 pip = "pip3.11 "
 
+os.system(pip + "install typing-extension==4.6.1")
 os.system(pip + "install jinja2")
 os.system(pip + "install langid==1.1.6")
 os.system(pip + "install numpy")
@@ -31,7 +32,7 @@ os.system(pip + "install transformers>=4.15")
 os.system(pip + "install gradio>=2.7")
 os.system(pip + "uninstall -y gradio")
 os.system(pip + "install gradio==2.7.5.2")
-os.system(pip + "install typing-extensions --upgrade")
+
 
 # exec app
 os.system(python + " app.py")
